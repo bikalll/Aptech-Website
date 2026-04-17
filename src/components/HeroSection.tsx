@@ -14,13 +14,10 @@ const Navbar = () => {
                 <Image
                     src="/logo/atl-logo.png"
                     alt="Aptech Lab logo"
-                    width={64}
-                    height={64}
+                    width={96}
+                    height={96}
                     className="object-contain"
                 />
-                <span className="text-white font-bold text-[20px] tracking-wider">
-                    Aptech Lab
-                </span>
             </div>
 
             {/* Nav Links */}
@@ -50,10 +47,10 @@ const Navbar = () => {
                     Careers
                 </Link>
                 <Link
-                    href="#founder-story"
+                    href="#about"
                     className="text-white text-[15px] font-normal pb-1 border-b-2 border-transparent hover:border-[#D4A017] transition-colors"
                 >
-                    Founder&apos;s Story
+                    About Us
                 </Link>
             </div>
 
@@ -93,8 +90,8 @@ const Navbar = () => {
                     <Link href="#careers" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
                         Careers
                     </Link>
-                    <Link href="#founder-story" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
-                        Founder&apos;s Story
+                    <Link href="#about" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        About Us
                     </Link>
                     <button className="mt-4 bg-[#D4A017] text-[#1a1a1a] rounded-full px-8 py-3 font-bold text-[16px] hover:bg-[#B8820A] transition-colors w-[80%] max-w-[300px]">
                         Get in touch

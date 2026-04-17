@@ -22,7 +22,7 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <section id="services" className="relative w-full bg-[#EBF0ED] text-[#111111] pt-32 pb-40 px-6 sm:px-8">
+        <section id="services" className="relative w-full bg-[#DCEAE0] text-[#111111] pt-32 pb-40 px-6 sm:px-8">
             <div className="max-w-[1400px] mx-auto">
                 {/* Section Header */}
                 <div className="w-full flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
