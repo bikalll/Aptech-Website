@@ -5,8 +5,10 @@ import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
     return (
-        <nav className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-24">
+        <nav className="relative z-50 w-full max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-24">
             {/* Logo */}
             <div className="flex items-center gap-3">
                 <Image
@@ -55,13 +57,50 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            {/* CTA Button */}
+            {/* CTA Button & Hamburger */}
             <div className="flex items-center gap-4">
-                <button className="bg-white text-[#1a1a1a] rounded-full px-6 py-[10px] font-semibold text-[14px] hover:bg-gray-100 transition-colors">
+                <button className="hidden sm:block bg-white text-[#1a1a1a] rounded-full px-6 py-[10px] font-semibold text-[14px] hover:bg-gray-100 transition-colors">
                     Get in touch
+                </button>
+
+                {/* Mobile Menu Button */}
+                <button
+                    className="block lg:hidden text-white p-2"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {isMenuOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        )}
+                    </svg>
                 </button>
             </div>
 
+            {/* Mobile Menu Overlay */}
+            {isMenuOpen && (
+                <div className="absolute top-24 left-0 w-full bg-[#0a1f12]/95 backdrop-blur-xl border-t border-white/10 lg:hidden flex flex-col items-center py-10 gap-6 shadow-2xl transition-all animate-in fade-in slide-in-from-top-4">
+                    <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        Home
+                    </Link>
+                    <Link href="#services" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        Services
+                    </Link>
+                    <Link href="#teams" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        Teams
+                    </Link>
+                    <Link href="#careers" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        Careers
+                    </Link>
+                    <Link href="#founder-story" onClick={() => setIsMenuOpen(false)} className="text-white text-[18px] font-semibold hover:text-[#D4A017] transition-colors">
+                        Founder&apos;s Story
+                    </Link>
+                    <button className="mt-4 bg-[#D4A017] text-[#1a1a1a] rounded-full px-8 py-3 font-bold text-[16px] hover:bg-[#B8820A] transition-colors w-[80%] max-w-[300px]">
+                        Get in touch
+                    </button>
+                </div>
+            )}
         </nav>
     );
 };
