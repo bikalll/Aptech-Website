@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg-overlay: rgba(10, 40, 20, 0.75);
+    --color-headline: #FFFFFF;
+    --color-btn-primary-bg: #D4960A;
+    --color-btn-primary-text: #1A1A1A;
+    --color-btn-secondary-border: rgba(255, 255, 255, 0.7);
+    --color-btn-secondary-text: #FFFFFF;
+    --color-logo-label: #D4A017;
+    --color-nav-link: #FFFFFF;
+    --color-nav-active-underline: #D4A017;
+    --color-cta-btn-bg: #FFFFFF;
+    --color-cta-btn-text: #111111;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: var(--font-manrope), var(--font-inter), sans-serif;
+}
