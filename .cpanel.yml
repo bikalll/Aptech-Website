@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/aptechla/public_html/
-    - npm install
-    - npm run build
-    - npm run export
-    - /bin/cp -R out/* $DEPLOYPATH
+    - /bin/cp -R public/. $DEPLOYPATH
