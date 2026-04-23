@@ -9,7 +9,7 @@ const projects = [
         title: "Biochar Integration",
         category: "SOIL RESTORATION",
         description: "Equipping smallholder farmers with advanced biochar application techniques to reverse soil degradation and establish long-lasting carbon sinks over the long term.",
-        image: "https://images.unsplash.com/photo-1598228723793-52759bba239c?w=1600&q=80",
+        image: "/works/biochar.jpg",
         location: "Kavre, Nepal",
         metrics: [
             { value: "120+", label: "FARMERS" },
@@ -21,7 +21,7 @@ const projects = [
         title: "Climate Workshop",
         category: "EDUCATION",
         description: "Facilitating intensive, community-first workshops to actively educate and empower local voices on pragmatic ecosystem building and climate resilience strategies.",
-        image: "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=1600&q=80",
+        image: "/works/community.jpg",
         location: "Kathmandu, Nepal",
         metrics: [
             { value: "50+", label: "COMMUNITIES" },
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                             <span className="inline-block px-4 py-1.5 border border-white/20 rounded-full text-white text-[11px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-sm bg-black/20">
                                 {activeProject.category}
                             </span>
-                            <h3 className="text-white text-[48px] sm:text-[64px] lg:text-[72px] font-bold leading-[1.05] mb-6 tracking-tight">
+                            <h3 className="text-white text-[48px] sm:text-[64px] lg:text-[72px] font-bold leading-[1.05] mb-6 tracking-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]">
                                 {activeProject.title}
                             </h3>
                             <p className="text-[16px] sm:text-[18px] text-white/90 font-light leading-relaxed max-w-lg">
@@ -115,8 +115,8 @@ export default function ProjectsSection() {
                             key={project.id}
                             onClick={() => setActiveIndex(index)}
                             className={`relative w-[180px] h-[120px] rounded-[16px] overflow-hidden flex-shrink-0 transition-all duration-300 focus:outline-none text-left flex flex-col justify-end p-3 ${activeIndex === index
-                                ? "border-2 border-[#D4A017] ring-4 ring-[#D4A017]/20 scale-100 z-10 opacity-100"
-                                : "border border-white/10 opacity-60 scale-95 hover:opacity-100"
+                                ? "border-2 border-[#D4A017] ring-4 ring-[#D4A017]/30 scale-100 z-10 opacity-100 shadow-[0_0_20px_rgba(212,160,23,0.3)]"
+                                : "border border-white/10 opacity-60 scale-95 hover:opacity-100 hover:scale-100 hover:ring-2 hover:ring-white/20"
                                 }`}
                         >
                             <Image

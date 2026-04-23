@@ -15,8 +15,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: 'Aptech Lab Hero Section',
-    description: 'Recreation of the Aptech Lab hero section',
+    title: 'Appropriate Technology Lab',
+    description: 'Bridging global expertise with local ecosystems to engineer sustainable climate solutions.',
+    icons: {
+        icon: '/logo/atl-logo.png',
+        apple: '/logo/atl-logo.png',
+    },
 };
 
 export default function RootLayout({

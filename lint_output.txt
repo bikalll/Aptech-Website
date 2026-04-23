@@ -1,0 +1,19 @@
+
+> varaha-app@0.1.0 lint
+> eslint
+
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\app\blog\page.tsx
+  191:57  error  Parsing error: Invalid character
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\app\services\page.tsx
+  100:49  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\HeroSection.tsx
+  4:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\ImpactSection.tsx
+  74:9  error  'observer' is never reassigned. Use 'const' instead  prefer-const
+
+Γ£û 4 problems (3 errors, 1 warning)
+

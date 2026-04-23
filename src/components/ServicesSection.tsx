@@ -43,12 +43,12 @@ export default function ServicesSection() {
                     </div>
                 </div>
 
-                {/* Editorial Service Rows */}
+                {/* Editorial Pillar Rows */}
                 <div className="flex flex-col w-full border-t border-[#CDD8D1]">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group flex flex-col lg:flex-row w-full border-b border-[#CDD8D1] py-12 lg:py-16 items-start lg:items-center relative transition-colors duration-500 hover:bg-[#E1E8E4] overflow-hidden cursor-pointer"
+                            className="group flex flex-col lg:flex-row w-full border-b border-[#CDD8D1] py-12 lg:py-16 items-start lg:items-center relative transition-all duration-500 hover:bg-[#E1E8E4] px-4 rounded-xl -mx-4 overflow-hidden cursor-pointer hover:shadow-sm"
                         >
                             <div className="w-full lg:w-[15%] mb-6 lg:mb-0">
                                 <span className="text-[16px] font-[500] text-black/30 group-hover:text-[#3A5A40] transition-colors duration-500">
@@ -69,8 +69,8 @@ export default function ServicesSection() {
                             </div>
 
                             <div className="w-full lg:w-[5%] flex justify-end mt-8 lg:mt-0 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out">
-                                <div className="w-12 h-12 rounded-full border border-[#3A5A40] flex items-center justify-center text-[#3A5A40]">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="w-14 h-14 rounded-full bg-white border border-[#3A5A40] flex items-center justify-center text-[#3A5A40] shadow-[0_10px_20px_rgba(58,90,64,0.1)] group-hover:scale-110 transition-transform duration-300">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
                                 </div>

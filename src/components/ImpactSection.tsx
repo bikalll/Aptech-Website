@@ -37,7 +37,7 @@ const AnimatedCounter = ({ target, suffix, duration = 2000 }: { target: number, 
     useEffect(() => {
         let startTime: number | null = null;
         let animationFrame: number;
-        let observer: IntersectionObserver;
+        let observer: IntersectionObserver | null = null;
 
         const startCount = (timestamp: number) => {
             if (!startTime) startTime = timestamp;
@@ -115,7 +115,7 @@ export default function ImpactSection() {
                     {metrics.map((metric, index) => (
                         <div
                             key={index}
-                            className="flex flex-col p-8 rounded-[16px] bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.04)] hover:border-[rgba(212,160,23,0.3)] transition-all duration-500 ease-out group"
+                            className="flex flex-col p-8 rounded-[20px] bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.04)] hover:border-[rgba(212,160,23,0.4)] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(212,160,23,0.12)] transition-all duration-500 ease-out group"
                         >
                             <AnimatedCounter target={metric.target} suffix={metric.suffix} />
 

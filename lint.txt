@@ -1,0 +1,22 @@
+
+> varaha-app@0.1.0 lint
+> eslint
+
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\app\blog\page.tsx
+  191:57  error  Parsing error: Invalid character
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\CareersSection.tsx
+  4:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\ImpactSection.tsx
+  74:9  error  'observer' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\ReadsSection.tsx
+  160:53  warning  'idx' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\acer\Desktop\New folder (22)\varaha-app\src\components\TeamSection.tsx
+  5:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 5 problems (2 errors, 3 warnings)
+
