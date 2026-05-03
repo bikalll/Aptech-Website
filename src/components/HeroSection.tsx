@@ -11,8 +11,8 @@ export default function HeroSection() {
             {/* Background Image & Overlays */}
             <div className="absolute inset-0 w-full h-full z-[0]">
                 <Image
-                    src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=2800"
-                    alt="Epic lush terraced fields"
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600"
+                    alt="Lush green rice paddies aerial view"
                     fill
                     priority
                     className="object-cover object-center"
