@@ -70,7 +70,7 @@ export default function Footer() {
                     <div className="flex flex-wrap items-center gap-8 text-[14px] font-medium text-white/50 w-full lg:w-auto">
                         <Link href="#services" className="hover:text-white transition-colors">Services</Link>
                         <Link href="#about" className="hover:text-white transition-colors">Our Story</Link>
-                        <Link href="/blog" className="hover:text-white transition-colors">Journal</Link>
+                        <Link href="/blogs" className="hover:text-white transition-colors">Journal</Link>
                         <a href="mailto:contact@aptechlab.com" className="hover:text-[#D4A017] transition-colors flex items-center gap-2">
                             Contact
                             <span className="w-1.5 h-1.5 rounded-full bg-[#D4A017] inline-block animate-pulse"></span>

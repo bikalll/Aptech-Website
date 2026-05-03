@@ -40,7 +40,7 @@ export default function ReadsSection() {
                     {articles.length > 0 && (
                         <div className="hidden md:block">
                             <Link
-                                href="/blog"
+                                href="/blogs"
                                 className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white text-[15px] font-medium tracking-wide overflow-hidden hover:border-[#D4A017]/50 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(212,160,23,0.2)] transition-all duration-300"
                             >
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-[#D4A017]">View All Articles</span>
@@ -119,7 +119,7 @@ export default function ReadsSection() {
                         {/* Right: Stacked Articles */}
                         <div className="flex flex-col gap-6 lg:gap-8">
                             {sideArticles.map((article) => (
-                                <Link href="/blog" key={article.id} className="group relative flex-1 rounded-[24px] overflow-hidden bg-white/[0.02] border border-white/[0.05] backdrop-blur-xl hover:border-[#D4A017]/50 transition-all duration-500 hover:shadow-[0_12px_40px_-10px_rgba(212,160,23,0.25)] hover:-translate-y-1 hover:bg-white/[0.04]">
+                                <Link href="/blogs" key={article.id} className="group relative flex-1 rounded-[24px] overflow-hidden bg-white/[0.02] border border-white/[0.05] backdrop-blur-xl hover:border-[#D4A017]/50 transition-all duration-500 hover:shadow-[0_12px_40px_-10px_rgba(212,160,23,0.25)] hover:-translate-y-1 hover:bg-white/[0.04]">
                                     {/* Glass shine effect inner */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
@@ -178,7 +178,7 @@ export default function ReadsSection() {
                 {articles.length > 0 && (
                     <div className="mt-12 text-center md:hidden">
                         <Link
-                            href="/blog"
+                            href="/blogs"
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#D4A017]/10 border border-[#D4A017]/30 text-[#D4A017] text-[14px] font-semibold tracking-wide"
                         >
                             View All Articles
