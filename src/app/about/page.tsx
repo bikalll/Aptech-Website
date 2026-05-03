@@ -1,34 +1,223 @@
 "use client";
 
-import Link from "next/link";
+import React from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-[#0a1f12] flex flex-col">
-            <div className="relative z-50 w-full">
-                <Navbar />
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-center px-6 -mt-24">
-                <span className="text-[#D4A017] text-[13px] font-[700] tracking-[0.3em] uppercase mb-6">
-                    About Us
-                </span>
-                <h1 className="text-white text-[48px] sm:text-[64px] lg:text-[80px] font-[600] tracking-[-0.03em] leading-[1.1] text-center mb-6">
-                    Coming <span className="text-white/50 italic font-light">Soon</span>
-                </h1>
-                <p className="text-white/40 text-[17px] sm:text-[19px] font-[300] leading-relaxed text-center max-w-lg mb-12">
-                    Our story is being crafted. Stay tuned to learn more about our journey and impact.
-                </p>
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/[0.04] border border-white/10 text-white/70 text-[15px] font-medium hover:bg-white/[0.08] hover:text-white hover:border-white/30 transition-all duration-300"
-                >
-                    <svg className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                    </svg>
-                    Back to Home
-                </Link>
-            </div>
+        <main className="min-h-screen bg-[#DCEAE0] flex flex-col overflow-x-hidden">
+            {/* ═══════════════════ HERO ═══════════════════ */}
+            <section className="relative min-h-[90vh] lg:min-h-[600px] w-full flex flex-col items-center overflow-hidden">
+                <div className="absolute inset-0 w-full h-full z-[0]">
+                    <img
+                        src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=2800"
+                        alt="Majestic mountains and mist"
+                        className="object-cover object-center w-full h-full"
+                    />
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            background: `
+                                radial-gradient(ellipse at left center, rgba(5,25,10,0.6) 0%, transparent 60%),
+                                linear-gradient(to bottom, rgba(10, 40, 20, 0.75) 0%, rgba(10, 40, 20, 0.55) 50%, rgba(10, 40, 20, 0.80) 100%)
+                            `
+                        }}
+                    />
+                </div>
+
+                <div className="relative z-50 w-full">
+                    <Navbar />
+                </div>
+
+                <div className="relative z-[10] flex-1 flex flex-col items-center justify-center text-center px-4 w-full max-w-[1100px] mx-auto pt-[80px] sm:pt-[140px] pb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                    <span className="text-[#D4A017] text-[13px] font-[700] tracking-[0.25em] uppercase mb-6 flex items-center gap-4">
+                        <span className="w-8 h-[1px] bg-[#D4A017]"></span>
+                        Who We Are
+                        <span className="w-8 h-[1px] bg-[#D4A017]"></span>
+                    </span>
+                    <h1
+                        className="text-white font-[800] leading-tight w-full drop-shadow-2xl"
+                        style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)' }}
+                    >
+                        Our Foundation
+                    </h1>
+
+                    <p className="mt-6 text-[rgba(255,255,255,0.65)] text-[16px] sm:text-[18px] max-w-2xl font-[300] leading-relaxed">
+                        A pioneering venture dedicated to addressing Nepal&apos;s most critical climate and environmental challenges.
+                    </p>
+                </div>
+            </section>
+
+            {/* ═══════════════════ TRUST PILLARS — premium cards design ═══════════════════ */}
+            <section className="relative w-full bg-[#DCEAE0] text-[#111111] pt-20 pb-40 px-6 sm:px-8 flex-1">
+                <div className="max-w-[1400px] mx-auto">
+                    {/* Section Header */}
+                    <div className="w-full flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
+                        <div className="max-w-3xl">
+                            <h2 className="text-[#3A5A40] text-[13px] font-[700] tracking-[0.25em] uppercase mb-8 flex items-center gap-4">
+                                <span className="w-8 h-[1px] bg-[#3A5A40]"></span>
+                                Purpose & Impact
+                            </h2>
+                            <h3 className="text-[40px] sm:text-[56px] lg:text-[72px] font-[500] leading-[1.05] tracking-[-0.02em]">
+                                Rooted in <span className="text-[#648460] italic font-light">purpose</span>,
+                                <br /> driven by impact.
+                            </h3>
+                        </div>
+                        <div className="max-w-[360px]">
+                            <p className="text-[17px] text-[rgba(0,0,0,0.6)] leading-relaxed font-light">
+                                A pioneering, woman-led social innovation venture dedicated to addressing Nepal&apos;s most critical climate and environmental challenges.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Premium Grid Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
+                        {[
+                            {
+                                num: "01",
+                                title: "Our Background",
+                                description: "A pioneering, woman-led social innovation venture dedicated to addressing Nepal's most critical climate and environmental challenges. We act as the vital bridge between global expertise and local ecosystems.",
+                                icon: (
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 3v18h18" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                                    </svg>
+                                ),
+                            },
+                            {
+                                num: "02",
+                                title: "Our Vision",
+                                description: "Bridging global expertise with local ecosystems to engineer sustainable solutions that communities can seamlessly adopt, maintain, and scale for lasting environmental resilience.",
+                                icon: (
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                    </svg>
+                                ),
+                            },
+                            {
+                                num: "03",
+                                title: "Our Goal",
+                                description: "Long-term carbon permanence and verifiable socio-economic development through community-first climate action and grassroots environmental operations across Nepal.",
+                                icon: (
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                ),
+                            },
+                        ].map((pillar, index) => (
+                            <div
+                                key={index}
+                                className="group relative bg-[#F4F8F5] rounded-[2.5rem] p-8 lg:p-10 flex flex-col justify-between transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-3 hover:bg-[#3A5A40] border border-[#CDD8D1] hover:border-[#3A5A40] overflow-hidden hover:shadow-[0_40px_60px_-15px_rgba(58,90,64,0.3)] min-h-[460px] cursor-pointer"
+                            >
+                                {/* Animated background gradient flare */}
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[800ms] ease-out translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+
+                                <div>
+                                    {/* Header Row: Num + Icon */}
+                                    <div className="flex justify-between items-start mb-12">
+                                        <span className="text-[15px] font-[600] tracking-wide text-[#3A5A40] group-hover:text-[#A7D1B5] transition-colors duration-500 font-mono">
+                                            {pillar.num}
+                                        </span>
+                                        <div className="w-16 h-16 rounded-full bg-white group-hover:bg-[#466B4C] flex items-center justify-center text-[#3A5A40] group-hover:text-white shadow-sm transition-all duration-500 group-hover:scale-110">
+                                            <div className="w-7 h-7">
+                                                {pillar.icon}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <h4 className="text-[28px] sm:text-[32px] font-[500] tracking-tight text-[#111111] group-hover:text-white mb-6 transition-colors duration-500 leading-[1.1]">
+                                        {pillar.title}
+                                    </h4>
+
+                                    <p className="text-[16px] text-[#4A5D50] group-hover:text-[#E2EAE4] leading-relaxed transition-colors duration-500 font-light">
+                                        {pillar.description}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════ CORE PHILOSOPHY — Dark theme ═══════════════════ */}
+            <section className="relative w-full bg-[#112419] py-32 sm:py-40 px-6 sm:px-8 overflow-hidden">
+                {/* Ambient glows */}
+                <div className="absolute top-1/2 left-0 w-[600px] h-[600px] bg-[#D4A017] rounded-full blur-[250px] opacity-[0.05] -translate-y-1/2 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-[rgba(255,255,255,0.01)] border-l border-white/[0.05]" />
+
+                <div className="max-w-[1400px] mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    {/* Left Typography */}
+                    <div className="w-full lg:w-1/2 flex flex-col gap-8">
+                        <div className="flex items-center gap-4">
+                            <span className="w-8 h-[1px] bg-[#D4A017]/40" />
+                            <span className="text-[#D4A017] text-[13px] font-[700] tracking-[0.25em] uppercase">Our Approach</span>
+                        </div>
+                        <h2 className="text-[44px] sm:text-[60px] lg:text-[72px] font-[500] leading-[1.05] tracking-[-0.03em] text-white">
+                            Bridging global ingenuity with <br />
+                            <span className="text-[#648460] italic font-light">local permanence.</span>
+                        </h2>
+
+                        <div className="w-full h-[1px] bg-white/10 my-4" />
+
+                        <p className="text-[19px] sm:text-[22px] font-[400] text-white/90 leading-relaxed max-w-xl">
+                            Engineering resilience beyond borders.
+                        </p>
+                        <p className="text-[17px] text-[rgba(255,255,255,0.5)] leading-relaxed font-light max-w-xl lg:max-w-md pr-0 lg:pr-8">
+                            While overarching climate frameworks provide a robust theoretical foundation, real impact requires hands-on execution. We rigorously architect methodologies, localized MRV frameworks, and technological interventions designed to ensure infrastructure that thrives for decades—not just project cycles.
+                        </p>
+                    </div>
+
+                    {/* Right Images */}
+                    <div className="w-full lg:w-1/2 flex items-center justify-center relative min-h-[400px] sm:min-h-[500px]">
+                        {/* Abstract visual representation instead of generic images */}
+                        <div className="relative w-full max-w-[500px] aspect-square">
+                            <div className="absolute inset-0 rounded-full border border-white/10 animate-[spin_60s_linear_infinite]" />
+                            <div className="absolute inset-4 rounded-full border border-white/5 animate-[spin_40s_linear_infinite_reverse]" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="w-32 h-32 rounded-full border border-[#D4A017]/40 bg-[#D4A017]/5 backdrop-blur-md flex items-center justify-center">
+                                    <div className="w-24 h-24 rounded-full border border-[#648460]/40 bg-[#648460]/10 flex items-center justify-center">
+                                        <div className="w-16 h-16 rounded-full bg-[#1A1A1A] flex items-center justify-center shadow-[0_0_30px_rgba(212,160,23,0.3)]">
+                                            <div className="w-3 h-3 rounded-full bg-[#D4A017]" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════ ECOSYSTEM ENABLER CTA — Light theme ═══════════════════ */}
+            <section className="relative w-full py-28 sm:py-40 px-6 sm:px-8 bg-[#EBF0ED]">
+                <div className="max-w-[1000px] mx-auto text-center flex flex-col items-center">
+                    <div className="w-20 h-20 mb-8 rounded-full bg-[#112419] flex items-center justify-center shadow-xl">
+                        <svg className="w-8 h-8 text-[#D4A017]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+
+                    <h2 className="text-[32px] sm:text-[44px] lg:text-[56px] font-[500] leading-tight tracking-[-0.02em] text-[#111111] mb-8">
+                        The definitive catalyst for <span className="italic font-light text-[#3A5A40]">climate execution.</span>
+                    </h2>
+
+                    <p className="text-[18px] text-[rgba(0,0,0,0.6)] leading-relaxed font-[300] max-w-2xl mb-12">
+                        We act as the central connective tissue for environmental action in Nepal—aligning institutional investment with grassroots innovation to unlock sustainable economic and ecological value.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
+                        <a href="mailto:contact@aptechlab.com.np" className="bg-[#D4960A] text-[#1A1A1A] font-[600] text-[16px] rounded-[8px] px-10 py-4 hover:bg-[#B8820A] hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(212,150,10,0.5)] transition-all transform flex items-center justify-center gap-2">
+                            Explore Partnership <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <Footer />
         </main>
     );
 }

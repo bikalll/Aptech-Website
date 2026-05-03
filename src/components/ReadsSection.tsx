@@ -5,52 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const articles: any[] = [];
-/*
-const articles = [
-    {
-        id: 1,
-        title: "How Biochar Is Quietly Revolutionizing Nepal's Soil",
-        excerpt:
-            "Deep in the hills of Kavre, a centuries-old technique meets modern climate science — and the results are transforming how smallholder farmers think about soil health.",
-        category: "BIOCHAR",
-        image: "/works/intelligence.jpeg",
-        author: {
-            name: "Bikal Niraula",
-            avatar: "/team/bikal.jpeg",
-        },
-        date: "Apr 12, 2026",
-        readTime: "6 min read",
-    },
-    {
-        id: 2,
-        title: "Building Climate Resilience Through Community-First Workshops",
-        excerpt:
-            "Our latest workshop series brought together 300+ participants across five districts. Here's what we learned about grassroots climate education.",
-        category: "COMMUNITY",
-        image: "/works/community.jpg",
-        author: {
-            name: "Priya Adhikari",
-            avatar: "/team/priya.png",
-        },
-        date: "Mar 28, 2026",
-        readTime: "8 min read",
-    },
-    {
-        id: 3,
-        title: "Carbon Credits: A Practical Guide for Nepali Agri-Businesses",
-        excerpt:
-            "The global carbon market is booming — but how can Nepal's agricultural sector actually participate? We break down the pathways and pitfalls.",
-        category: "CLIMATE ACTION",
-        image: "/works/biochar.jpg",
-        author: {
-            name: "Suman Karki",
-            avatar: "/team/suman.png",
-        },
-        date: "Mar 15, 2026",
-        readTime: "5 min read",
-    },
-];
-*/
+
 
 export default function ReadsSection() {
     const featuredArticle = articles[0];

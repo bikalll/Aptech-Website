@@ -6,26 +6,14 @@ import Image from "next/image";
 const projects = [
     {
         id: 1,
-        title: "Biochar Integration",
-        category: "SOIL RESTORATION",
-        description: "Equipping smallholder farmers with advanced biochar application techniques to reverse soil degradation and establish long-lasting carbon sinks over the long term.",
+        title: "Biochar",
+        category: "FLAGSHIP PROJECT",
+        description: "From open burning to carbon removal systems, our pilot is transforming waste into value. Farmers convert biomass into biochar instead of open burning. Carbon is removed and stored in soil, generating carbon credits. A structured system (SOP + ICS + MRV) ensures scalability and certification readiness. Women-led cooperative model drives local ownership and long-term sustainability.",
         image: "/works/biochar.jpg",
         location: "Kavre, Nepal",
         metrics: [
-            { value: "120+", label: "FARMERS" },
-            { value: "10+", label: "PARTNERSHIPS" }
-        ]
-    },
-    {
-        id: 2,
-        title: "Climate Workshop",
-        category: "EDUCATION",
-        description: "Facilitating intensive, community-first workshops to actively educate and empower local voices on pragmatic ecosystem building and climate resilience strategies.",
-        image: "/works/community.jpg",
-        location: "Kathmandu, Nepal",
-        metrics: [
-            { value: "50+", label: "COMMUNITIES" },
-            { value: "3,000+", label: "PARTICIPANTS" }
+            { value: "SOP+MRV", label: "STRUCTURED SYSTEM" },
+            { value: "CO2", label: "CARBON REMOVAL" }
         ]
     }
 ];
@@ -35,7 +23,7 @@ export default function ProjectsSection() {
     const activeProject = projects[activeIndex];
 
     return (
-        <section className="relative w-full min-h-[100vh] lg:min-h-[800px] flex items-center justify-center overflow-hidden bg-black">
+        <section className="relative w-full min-h-[100vh] lg:min-h-[800px] flex flex-col justify-center overflow-hidden bg-black py-24">
 
             {/* Full Viewport Background Imagery */}
             {projects.map((project, index) => (
@@ -56,27 +44,27 @@ export default function ProjectsSection() {
             ))}
 
             {/* Gradient Overlays for Text Legibility */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/40 to-black/20" />
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-transparent to-black/40" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/40 to-black/20 pointer-events-none" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-transparent to-black/40 pointer-events-none" />
 
-            {/* Main Content Container */}
-            <div className="relative z-20 w-full h-full max-w-[1400px] mx-auto px-6 sm:px-12 flex flex-col justify-between pt-24 pb-48 lg:pb-32">
+            {/* Main Content Container in Standard Flow */}
+            <div className="relative z-20 w-full max-w-[1400px] mx-auto px-6 sm:px-12 flex flex-col">
 
                 {/* Top Title */}
-                <div className="w-full text-center absolute top-24 left-0 right-0">
+                <div className="w-full text-center mb-16 sm:mb-24">
                     <h2 className="text-white text-[40px] sm:text-[56px] font-bold tracking-tight">
                         Our Projects
                     </h2>
                 </div>
 
                 {/* Center Content Row */}
-                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-32 lg:mt-48 gap-12">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full gap-12">
 
                     {/* Left Typography Focus */}
-                    <div className="w-full lg:w-1/2 flex flex-col items-start min-h-[300px]">
+                    <div className="w-full lg:w-[60%] flex flex-col items-start min-h-[200px]">
                         <div
                             key={activeProject.id}
-                            className="animate-fade-in-up"
+                            className="animate-fade-in-up w-full"
                         >
                             <span className="inline-block px-4 py-1.5 border border-white/20 rounded-full text-white text-[11px] font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-sm bg-black/20">
                                 {activeProject.category}
@@ -84,9 +72,39 @@ export default function ProjectsSection() {
                             <h3 className="text-white text-[48px] sm:text-[64px] lg:text-[72px] font-bold leading-[1.05] mb-6 tracking-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]">
                                 {activeProject.title}
                             </h3>
-                            <p className="text-[16px] sm:text-[18px] text-white/90 font-light leading-relaxed max-w-lg">
+                            <p className="text-[16px] sm:text-[18px] text-white/90 font-light leading-relaxed max-w-lg mb-10">
                                 {activeProject.description}
                             </p>
+
+                            {/* Embedded Thumbnails Navigation */}
+                            <div className="w-full flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto">
+                                {projects.map((project, index) => (
+                                    <button
+                                        key={project.id}
+                                        onClick={() => setActiveIndex(index)}
+                                        className={`relative w-[180px] h-[120px] rounded-[16px] overflow-hidden flex-shrink-0 transition-all duration-300 focus:outline-none text-left flex flex-col justify-end p-3 ${activeIndex === index
+                                            ? "border-2 border-[#D4A017] ring-4 ring-[#D4A017]/30 scale-100 z-10 opacity-100 shadow-[0_0_20px_rgba(212,160,23,0.3)]"
+                                            : "border border-white/10 opacity-60 scale-95 hover:opacity-100 hover:scale-100 hover:ring-2 hover:ring-white/20"
+                                            }`}
+                                    >
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            className="object-cover -z-10"
+                                            unoptimized
+                                        />
+                                        <div className={`absolute inset-0 -z-10 transition-colors ${activeIndex === index ? "bg-black/30" : "bg-black/60"}`} />
+
+                                        <span className="text-white/80 text-[9px] font-bold tracking-wider uppercase drop-shadow-md relative z-10">
+                                            {project.title}
+                                        </span>
+                                        <span className="text-white font-medium text-[12px] drop-shadow-md truncate w-full relative z-10">
+                                            {project.location}
+                                        </span>
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
@@ -97,45 +115,13 @@ export default function ProjectsSection() {
                                 <div className="text-[#D4A017] text-[40px] lg:text-[56px] font-semibold leading-none mb-2">
                                     {metric.value}
                                 </div>
-                                <div className="text-white text-[12px] lg:text-[14px] font-bold tracking-[0.2em]">
+                                <div className="text-white text-[12px] lg:text-[14px] font-bold tracking-[0.2em] text-center lg:text-right">
                                     {metric.label}
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                </div>
-            </div>
-
-            {/* Bottom Thumbnails Navigation */}
-            <div className="absolute bottom-8 left-0 w-full z-30 px-6 sm:px-12">
-                <div className="max-w-[1400px] mx-auto flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-                    {projects.map((project, index) => (
-                        <button
-                            key={project.id}
-                            onClick={() => setActiveIndex(index)}
-                            className={`relative w-[180px] h-[120px] rounded-[16px] overflow-hidden flex-shrink-0 transition-all duration-300 focus:outline-none text-left flex flex-col justify-end p-3 ${activeIndex === index
-                                ? "border-2 border-[#D4A017] ring-4 ring-[#D4A017]/30 scale-100 z-10 opacity-100 shadow-[0_0_20px_rgba(212,160,23,0.3)]"
-                                : "border border-white/10 opacity-60 scale-95 hover:opacity-100 hover:scale-100 hover:ring-2 hover:ring-white/20"
-                                }`}
-                        >
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                fill
-                                className="object-cover -z-10"
-                                unoptimized
-                            />
-                            <div className={`absolute inset-0 -z-10 ${activeIndex === index ? "bg-black/30" : "bg-black/60"}`} />
-
-                            <span className="text-white/80 text-[9px] font-bold tracking-wider uppercase drop-shadow-md">
-                                {project.title}
-                            </span>
-                            <span className="text-white font-medium text-[12px] drop-shadow-md truncate w-full">
-                                {project.location}
-                            </span>
-                        </button>
-                    ))}
                 </div>
             </div>
 

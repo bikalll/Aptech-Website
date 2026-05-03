@@ -38,8 +38,8 @@ export default function TeamPage() {
                 {/* Background — consistent with services page */}
                 <div className="absolute inset-0 w-full h-full z-[0]">
                     <Image
-                        src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1600"
-                        alt="Inspiring landscape"
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2800"
+                        alt="Team collaboration"
                         fill
                         priority
                         className="object-cover object-center"
@@ -66,11 +66,11 @@ export default function TeamPage() {
                         className="text-white font-[800] leading-tight w-full drop-shadow-2xl"
                         style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)' }}
                     >
-                        The Minds Shaping Climate Resilience
+                        The People Behind the Mission
                     </h1>
 
                     <p className="mt-6 text-[rgba(255,255,255,0.65)] text-[16px] sm:text-[18px] max-w-2xl font-[300] leading-relaxed">
-                        A dynamic team of innovators bridging global capital with local ecosystem strength.
+                        Women-led, community-driven. Building Nepal's integrated climate execution platform.
                     </p>
                 </div>
             </section>

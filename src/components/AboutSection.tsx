@@ -22,15 +22,14 @@ export default function AboutSection() {
                     </div>
 
                     <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-[500] leading-[1.1] tracking-[-0.03em] text-[#1a1a1a]">
-                        “One-Stop solution for <br className="hidden sm:block" />
-                        <span className="text-[#3A5A40] italic font-light relative">
-                            climate and environmental
+                        An <span className="text-[#3A5A40] italic font-light relative">
+                            ecosystem enabler
                             <svg className="absolute w-full h-[6px] -bottom-1 left-0 text-[#D4A017] opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="transparent" />
                             </svg>
                         </span>
                         <br />
-                        problems in Nepal”
+                        for Nepal’s climate.
                     </h2>
                 </div>
 
@@ -42,7 +41,7 @@ export default function AboutSection() {
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                         </svg>
                         <p className="text-[17px] sm:text-[19px] leading-[1.8] text-[#333333] font-[400] relative z-10">
-                            <strong className="font-[600] text-[#111111]">Aptech Lab</strong> is a pioneering, woman-led social innovation venture dedicated to addressing Nepal’s most critical climate and environmental challenges. We act as the vital bridge between global expertise and local ecosystems, engineering sustainable solutions that communities can seamlessly adopt, maintain, and scale.
+                            <strong className="font-[600] text-[#111111]">Aptech Lab</strong> is a Nepal-based, women-led climate innovation and implementation company building scalable, community-driven environmental solutions. We act as the vital bridge between global expertise and local ecosystems.
                         </p>
                     </div>
 

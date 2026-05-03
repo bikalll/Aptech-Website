@@ -30,12 +30,12 @@ function useReveal(threshold = 0.15) {
 const services = [
     {
         id: "01",
-        title: "Climate Finance & Strategy",
-        tagline: "Unlocking capital for planet-scale impact",
-        description: "Architecting bespoke carbon projects, rigorous baselines, and uncompromising MRV.",
-        details: "We specialize in developing high-integrity emission reduction and removal projects. Through rigorous methodologies aligned with global best practices, we unlock institutional capital necessary to deploy innovative environmental interventions at scale. Our focus is long-term carbon permanence and verifiable socio-economic development.",
+        title: "Market Intelligence",
+        tagline: "Empirical clarity for ecosystems",
+        description: "Deep-tier data analysis and multi-variable feasibility studies.",
+        details: "Navigating the volatile regulatory environment requires empirical clarity. We construct comprehensive feasibility analyses, socio-ecological impact assessments, and rigorous empirical models.",
         image: "/works/nature.jpg",
-        features: ["Carbon Mechanism Structuring", "MRV Framework Design", "Capital Risk Mitigation"],
+        features: ["Socio-Ecological Modeling", "Advanced Feasibility Studies"],
         icon: (
             <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -44,12 +44,12 @@ const services = [
     },
     {
         id: "02",
-        title: "Market Intelligence",
-        tagline: "Empirical clarity for emerging economies",
-        description: "Deep-tier policy analysis and multi-variable feasibility mapping.",
-        details: "Navigating the volatile regulatory environment of climate tech requires empirical clarity. We construct comprehensive feasibility analyses, socio-ecological impact assessments, and regulatory models that empower our clients to confidently expand operations within emerging economies.",
+        title: "Climate Advisory",
+        tagline: "Navigating complex environments",
+        description: "Providing the strategic direction required to confidently build carbon mechanisms.",
+        details: "We specialize in developing high-integrity interventions aligned with global best practices, designed to unlock institutional capital and drive tangible, audited climate impact.",
         image: "/works/biochar.jpg",
-        features: ["Regulatory & Policy Scoping", "Socio-Ecological Modeling", "Advanced Feasibility Studies"],
+        features: ["Carbon Mechanism Structuring", "MRV Framework Design", "Capital Risk Mitigation"],
         icon: (
             <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
@@ -59,9 +59,9 @@ const services = [
     {
         id: "03",
         title: "Community Mobilization",
-        tagline: "Ground-level operations that elevate lives",
-        description: "Moving policy into reality with rigorous, localized execution operations.",
-        details: "Global foresight fails without localized execution. We deploy biochar technologies, conduct intensive climate resilience workshops, and implement localized soil restoration efforts. By placing women and marginalized groups at the center of implementation, we orchestrate field operations that directly elevate smallholder farmer livelihoods.",
+        tagline: "Deployment of appropriate technologies",
+        description: "Executing on the ground with grassroots execution capabilities.",
+        details: "Global foresight fails without localized execution. We deploy biochar technologies, conduct intensive climate resilience workshops, and implement localized soil restoration efforts seamlessly.",
         image: "/works/community.jpg",
         features: ["Grassroots Technical Training", "Biochar Practical Deployment", "Women-Led Operations"],
         icon: (
@@ -70,13 +70,27 @@ const services = [
             </svg>
         ),
     },
+    {
+        id: "04",
+        title: "Policy Architecture",
+        tagline: "Shaping sustainable climate finance",
+        description: "Structuring macroeconomic strategies at the systemic ecosystem level.",
+        details: "Assisting governmental bodies and large-scale institutions to craft policy measures ensuring effective adoption of climate actions.",
+        image: "/works/nature.jpg",
+        features: ["Policy Formats", "Macro-Environmental Strategy"],
+        icon: (
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8m0 0V3m0 10h8m-8 0H4" />
+            </svg>
+        ),
+    }
 ];
 
 const methodology = [
     {
         step: "01",
-        title: "Diagnostic",
-        desc: "Rigorous socio-ecological analysis establishing a baseline for intervention.",
+        title: "Identify Local Needs",
+        desc: "Establishing a solid baseline understanding of specific community challenges.",
         icon: (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -85,8 +99,8 @@ const methodology = [
     },
     {
         step: "02",
-        title: "Parametrization",
-        desc: "Modeling variables and financial streams to create a high-integrity framework.",
+        title: "Deploy Global Solutions",
+        desc: "Connecting what exists to what's needed using appropriate global technologies.",
         icon: (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
@@ -96,14 +110,44 @@ const methodology = [
     },
     {
         step: "03",
-        title: "Deployment",
-        desc: "Executing on the ground with strict MRV protocols and sustained tracking.",
+        title: "Collaborate",
+        desc: "Partnering seamlessly with community and local stakeholders.",
         icon: (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
             </svg>
         ),
     },
+    {
+        step: "04",
+        title: "Localize & Execute",
+        desc: "Transforming plans to match environmental realities on the ground.",
+        icon: (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        ),
+    },
+    {
+        step: "05",
+        title: "Ensure Sustainability",
+        desc: "Women-led cooperative models and structured systems for longevity.",
+        icon: (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8m0 0V3m0 10h8m-8 0H4" />
+            </svg>
+        ),
+    },
+    {
+        step: "06",
+        title: "Monitor & Verify",
+        desc: "Implementing rigorous testing, certification readiness, and handover.",
+        icon: (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+        ),
+    }
 ];
 
 
@@ -130,8 +174,8 @@ export default function ServicesPage() {
                     style={{ transform: `translateY(${scrollY * 0.35}px)` }}
                 >
                     <Image
-                        src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600"
-                        alt="Ecosystem Resilience"
+                        src="https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=2800"
+                        alt="Ecosystem Resilience - winding river in dense forest"
                         fill
                         priority
                         className="object-cover object-center"
@@ -177,150 +221,54 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* ═══════════════════ TRUST PILLARS — premium cards design ═══════════════════ */}
-            <section className="relative w-full bg-[#DCEAE0] text-[#111111] pt-32 pb-40 px-6 sm:px-8">
-                <div className="max-w-[1400px] mx-auto">
-                    {/* Section Header */}
-                    <div className="w-full flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
-                        <div className="max-w-3xl">
-                            <h2 className="text-[#3A5A40] text-[13px] font-[700] tracking-[0.25em] uppercase mb-8 flex items-center gap-4">
-                                <span className="w-8 h-[1px] bg-[#3A5A40]"></span>
-                                Our Foundation
-                            </h2>
-                            <h3 className="text-[40px] sm:text-[56px] lg:text-[72px] font-[500] leading-[1.05] tracking-[-0.02em]">
-                                Rooted in <span className="text-[#648460] italic font-light">purpose</span>,
-                                <br /> driven by impact.
-                            </h3>
-                        </div>
-                        <div className="max-w-[360px]">
-                            <p className="text-[17px] text-[rgba(0,0,0,0.6)] leading-relaxed font-light">
-                                A pioneering, woman-led social innovation venture dedicated to addressing Nepal&apos;s most critical climate and environmental challenges.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Premium Grid Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
-                        {[
-                            {
-                                num: "01",
-                                title: "Our Background",
-                                description: "A pioneering, woman-led social innovation venture dedicated to addressing Nepal's most critical climate and environmental challenges. We act as the vital bridge between global expertise and local ecosystems.",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 3v18h18" />
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                num: "02",
-                                title: "Our Vision",
-                                description: "Bridging global expertise with local ecosystems to engineer sustainable solutions that communities can seamlessly adopt, maintain, and scale for lasting environmental resilience.",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                num: "03",
-                                title: "Our Goal",
-                                description: "Long-term carbon permanence and verifiable socio-economic development through community-first climate action and grassroots environmental operations across Nepal.",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                        <circle cx="9" cy="7" r="4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                    </svg>
-                                ),
-                            },
-                        ].map((pillar, index) => (
-                            <div
-                                key={index}
-                                className="group relative bg-[#F4F8F5] rounded-[2.5rem] p-8 lg:p-10 flex flex-col justify-between transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-3 hover:bg-[#3A5A40] border border-[#CDD8D1] hover:border-[#3A5A40] overflow-hidden hover:shadow-[0_40px_60px_-15px_rgba(58,90,64,0.3)] min-h-[460px] cursor-pointer"
-                            >
-                                {/* Animated background gradient flare */}
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[800ms] ease-out translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
-
-                                <div>
-                                    {/* Header Row: Num + Icon */}
-                                    <div className="flex justify-between items-start mb-12">
-                                        <span className="text-[15px] font-[600] tracking-wide text-[#3A5A40] group-hover:text-[#A7D1B5] transition-colors duration-500 font-mono">
-                                            {pillar.num}
-                                        </span>
-                                        <div className="w-16 h-16 rounded-full bg-white group-hover:bg-[#466B4C] flex items-center justify-center text-[#3A5A40] group-hover:text-white shadow-sm transition-all duration-500 group-hover:scale-110">
-                                            <div className="w-7 h-7">
-                                                {pillar.icon}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Content */}
-                                    <h4 className="text-[28px] sm:text-[32px] font-[500] tracking-tight text-[#111111] group-hover:text-white mb-6 transition-colors duration-500 leading-[1.1]">
-                                        {pillar.title}
-                                    </h4>
-
-                                    <p className="text-[16px] text-[#4A5D50] group-hover:text-[#E2EAE4] leading-relaxed transition-colors duration-500 font-light">
-                                        {pillar.description}
-                                    </p>
-                                </div>
 
 
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ═══════════════════ SERVICES DEEP DIVE — dark green themed ═══════════════════ */}
-            <section id="our-services" className="relative w-full py-28 sm:py-40 bg-[#112419] overflow-hidden">
+            {/* ═══════════════════ SERVICES DEEP DIVE — light sage themed ═══════════════════ */}
+            <section id="our-services" className="relative w-full py-28 sm:py-40 bg-[#DCEAE0] overflow-hidden">
                 {/* Ambient glows */}
-                <div className="absolute top-[10%] right-0 w-[800px] h-[800px] bg-[#1E5631] rounded-full blur-[250px] opacity-30 pointer-events-none" />
-                <div className="absolute bottom-[10%] left-0 w-[600px] h-[600px] bg-[#D4A017] rounded-full blur-[250px] opacity-[0.05] pointer-events-none" />
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-32 bg-gradient-to-b from-[#D4A017]/40 to-transparent" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C1D6C8] rounded-full blur-[120px] opacity-60 -translate-y-1/3 translate-x-1/4 pointer-events-none" />
+                <div className="absolute bottom-[10%] left-0 w-[400px] h-[400px] bg-[#3A5A40] rounded-full blur-[150px] opacity-[0.1] translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
                 <div className="max-w-[1400px] mx-auto px-6 sm:px-12 relative z-10">
                     {/* Section header */}
                     <div className="w-full flex flex-col items-center text-center mb-20 sm:mb-28">
                         <div className="flex items-center gap-5 mb-10">
-                            <span className="w-12 h-[1px] bg-[#D4A017]/40" />
-                            <span className="text-[#D4A017] text-[13px] font-[700] tracking-[0.3em] uppercase">
+                            <span className="w-12 h-[1px] bg-[#3A5A40]" />
+                            <span className="text-[#3A5A40] text-[13px] font-[700] tracking-[0.3em] uppercase">
                                 What We Do
                             </span>
-                            <span className="w-12 h-[1px] bg-[#D4A017]/40" />
+                            <span className="w-12 h-[1px] bg-[#3A5A40]" />
                         </div>
 
-                        <h2 className="text-[44px] sm:text-[60px] lg:text-[80px] font-[500] leading-[1.05] tracking-[-0.03em] text-white max-w-4xl">
-                            Three pillars driving
+                        <h2 className="text-[44px] sm:text-[60px] lg:text-[80px] font-[500] leading-[1.05] tracking-[-0.03em] text-[#111111] max-w-4xl">
+                            Four foundational pillars driving
                             <br />
-                            <span className="relative inline-block text-[rgba(255,255,255,0.7)] italic font-light">
+                            <span className="relative inline-block text-[#648460] italic font-light">
                                 measurable
-                                <svg className="absolute w-full h-[8px] -bottom-1 left-0 text-[#D4A017] opacity-50" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <svg className="absolute w-full h-[8px] -bottom-1 left-0 text-[#3A5A40] opacity-40" viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 25 0 50 5 Q 75 10 100 5" stroke="currentColor" strokeWidth="2" fill="transparent" />
                                 </svg>
                             </span>{" "}
                             climate action.
                         </h2>
 
-                        <p className="mt-8 text-[17px] sm:text-[19px] text-[rgba(255,255,255,0.5)] font-[300] leading-relaxed max-w-2xl">
+                        <p className="mt-8 text-[17px] sm:text-[19px] text-[rgba(0,0,0,0.5)] font-[300] leading-relaxed max-w-2xl">
                             We operate at the critical intersection of environmental innovation and socio-economic resilience, building scalable mechanisms for tomorrow&apos;s climate.
                         </p>
 
                         <div className="mt-10 flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-white/10" />
-                            <span className="w-2 h-2 rounded-full bg-[#D4A017]/50" />
-                            <span className="w-1.5 h-1.5 rounded-full bg-white/10" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#3A5A40]/20" />
+                            <span className="w-2 h-2 rounded-full bg-[#3A5A40]/50" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#3A5A40]/20" />
                         </div>
                     </div>
 
-                    {/* Service Cards — premium dark theme */}
+                    {/* Service Cards — premium light theme */}
                     <div className="flex flex-col w-full gap-8 lg:gap-16 mt-16">
                         {services.map((service, index) => (
                             <div
                                 key={service.id}
-                                className={`group flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-full bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] rounded-[32px] overflow-hidden backdrop-blur-md hover:bg-[rgba(255,255,255,0.04)] hover:border-[rgba(212,160,23,0.3)] transition-all duration-700 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]`}
+                                className={`group flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-full bg-white border border-[#CDD8D1] rounded-[32px] overflow-hidden hover:border-[#3A5A40]/40 transition-all duration-700 hover:shadow-[0_20px_50px_rgba(58,90,64,0.15)]`}
                             >
                                 {/* Image Half */}
                                 <div className="w-full lg:w-1/2 relative h-[350px] sm:h-[450px] lg:h-auto overflow-hidden">
@@ -328,45 +276,45 @@ export default function ServicesPage() {
                                         src={service.image}
                                         alt={service.title}
                                         fill
-                                        className="object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700 ease-out mix-blend-luminosity hover:mix-blend-normal"
+                                        className="object-cover group-hover:scale-105 transition-all duration-700 ease-out"
                                     />
                                     {/* Overlay gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#112419] via-[#112419]/40 to-transparent group-hover:opacity-50 transition-opacity duration-500" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent group-hover:opacity-50 transition-opacity duration-500" />
 
                                     {/* Number Badge */}
-                                    <div className="absolute top-6 left-6 w-14 h-14 rounded-full bg-[#112419]/80 border border-[rgba(255,255,255,0.1)] backdrop-blur-md flex items-center justify-center shadow-lg pointer-events-none group-hover:border-[#D4A017]/50 transition-colors duration-500">
-                                        <span className="text-[#D4A017] font-[700] text-[18px]">{service.id}</span>
+                                    <div className="absolute top-6 left-6 w-14 h-14 rounded-full bg-white/90 border border-[#CDD8D1] backdrop-blur-md flex items-center justify-center shadow-lg pointer-events-none group-hover:border-[#3A5A40]/50 transition-colors duration-500">
+                                        <span className="text-[#3A5A40] font-[700] text-[18px]">{service.id}</span>
                                     </div>
                                 </div>
 
                                 {/* Content Half */}
                                 <div className="w-full lg:w-1/2 p-8 sm:p-12 lg:p-16 flex flex-col justify-center relative">
                                     <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-14 h-14 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] flex items-center justify-center text-[#D4A017] group-hover:bg-[#D4A017] group-hover:text-[#112419] transition-colors duration-500 shadow-[0_0_20px_rgba(212,160,23,0.1)]">
+                                        <div className="w-14 h-14 rounded-2xl bg-[#F4F8F5] border border-[#CDD8D1] flex items-center justify-center text-[#3A5A40] group-hover:bg-[#3A5A40] group-hover:text-white transition-colors duration-500 shadow-sm">
                                             {service.icon}
                                         </div>
-                                        <span className="text-[13px] font-[700] tracking-[0.2em] uppercase text-[#D4A017]/80 group-hover:text-[#D4A017] transition-colors duration-500">
+                                        <span className="text-[13px] font-[700] tracking-[0.2em] uppercase text-[#3A5A40]/70 group-hover:text-[#3A5A40] transition-colors duration-500">
                                             {service.tagline}
                                         </span>
                                     </div>
 
-                                    <h4 className="text-[32px] sm:text-[40px] lg:text-[48px] font-[500] tracking-tight text-white mb-6 leading-[1.1] group-hover:-translate-y-1 transition-transform duration-500">
+                                    <h4 className="text-[32px] sm:text-[40px] lg:text-[48px] font-[500] tracking-tight text-[#111111] mb-6 leading-[1.1] group-hover:-translate-y-1 transition-transform duration-500">
                                         {service.title}
                                     </h4>
 
-                                    <div className="text-[17px] text-[rgba(255,255,255,0.6)] leading-relaxed font-light mb-10 flex flex-col gap-4">
-                                        <p className="font-[400] text-white/90 text-[19px]">
+                                    <div className="text-[17px] text-[rgba(0,0,0,0.5)] leading-relaxed font-light mb-10 flex flex-col gap-4">
+                                        <p className="font-[400] text-[#111111]/90 text-[19px]">
                                             {service.description}
                                         </p>
-                                        <p className="group-hover:text-[rgba(255,255,255,0.8)] transition-colors duration-500">
+                                        <p className="group-hover:text-[rgba(0,0,0,0.7)] transition-colors duration-500">
                                             {service.details}
                                         </p>
                                     </div>
 
-                                    <div className="flex flex-wrap gap-3 mt-auto pt-8 border-t border-[rgba(255,255,255,0.05)]">
+                                    <div className="flex flex-wrap gap-3 mt-auto pt-8 border-t border-[#CDD8D1]">
                                         {service.features.map((feature, i) => (
-                                            <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] text-[13px] font-[500] text-[rgba(255,255,255,0.8)] group-hover:bg-[rgba(255,255,255,0.08)] group-hover:border-[#D4A017]/30 transition-all duration-300">
-                                                <svg className="w-3.5 h-3.5 text-[#D4A017]" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                                            <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F4F8F5] border border-[#CDD8D1] text-[13px] font-[500] text-[#3A5A40] group-hover:bg-[#3A5A40]/10 group-hover:border-[#3A5A40]/30 transition-all duration-300">
+                                                <svg className="w-3.5 h-3.5 text-[#3A5A40]" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                                 </svg>
                                                 {feature}

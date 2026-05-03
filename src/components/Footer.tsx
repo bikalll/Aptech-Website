@@ -35,10 +35,12 @@ export default function Footer() {
                             <span className="text-[15px] font-bold tracking-[0.2em] text-white/90">APTECH LAB</span>
                         </div>
                         <h3 className="text-[34px] font-[500] leading-tight tracking-tight mt-4 text-white/95">
-                            Engineering climate resilience for Nepal&apos;s ecosystem.
+                            Let's build climate solutions together.
                         </h3>
-                        <p className="text-[16px] font-light leading-relaxed text-white/50 border-l-2 border-[#D4A017]/30 pl-5">
-                            Bridging global foresight with localized execution. We deploy biochar technologies and structure carbon offset mechanisms.
+                        <p className="text-[16px] font-[500] leading-relaxed text-white/70 border-l-2 border-[#D4A017]/30 pl-5">
+                            <a href="mailto:contact@aptechlab.com.np" className="hover:text-[#D4A017] transition-colors">contact@aptechlab.com.np</a><br />
+                            977-9808771537<br />
+                            <a href="https://www.aptechlab.com.np" target="_blank" className="hover:text-[#D4A017] transition-colors">www.aptechlab.com.np</a>
                         </p>
                     </div>
 

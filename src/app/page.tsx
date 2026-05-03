@@ -1,7 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ImpactSection from "@/components/ImpactSection";
+import CoreAreasSection from "@/components/CoreAreasSection";
 import ServicesSection from "@/components/ServicesSection";
+import HowWeWorkSection from "@/components/HowWeWorkSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ReadsSection from "@/components/ReadsSection";
 import PartnersMarquee from "@/components/PartnersMarquee";
@@ -13,8 +14,9 @@ export default function Home() {
       <HeroSection />
       <PartnersMarquee />
       <AboutSection />
-      <ImpactSection />
+      <CoreAreasSection />
       <ServicesSection />
+      <HowWeWorkSection />
       <ProjectsSection />
       <ReadsSection />
       <Footer />

@@ -11,8 +11,8 @@ export default function HeroSection() {
             {/* Background Image & Overlays */}
             <div className="absolute inset-0 w-full h-full z-[0]">
                 <Image
-                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600"
-                    alt="Lush green rice paddies aerial view"
+                    src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=2800"
+                    alt="Epic lush terraced fields"
                     fill
                     priority
                     className="object-cover object-center"
@@ -40,7 +40,7 @@ export default function HeroSection() {
                         className="text-white font-[800] leading-tight w-full drop-shadow-2xl"
                         style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)' }}
                     >
-                        Global Climate Ideas Powering Practical Solutions for Nepal’s Future
+                        Connecting What Exists to What's Needed
                     </h1>
 
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">

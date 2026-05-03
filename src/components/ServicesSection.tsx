@@ -5,18 +5,23 @@ import React from "react";
 const services = [
     {
         num: "01",
-        title: "Climate Finance & Strategy",
-        description: "Architecting bespoke carbon projects. We engineer robust Measurement, Reporting, and Verification (MRV) systems designed to unlock institutional capital and drive tangible, audited environmental impact.",
+        title: "Market Intelligence",
+        description: "Deep-tier policy analysis and multi-variable feasibility studies to construct empirical clarity.",
     },
     {
         num: "02",
-        title: "Market Intelligence",
-        description: "Deep-tier policy analysis and multi-variable feasibility studies. We provide the empirical clarity required to confidently navigate complex socio-ecological and regulatory environments in emerging economies.",
+        title: "Climate Advisory",
+        description: "Navigating complex socio-ecological environments to unlock robust institutional capital.",
     },
     {
         num: "03",
         title: "Community Mobilization",
-        description: "Executing on the ground. From deploying biochar technological systems to localized soil restoration, we orchestrate field operations that directly elevate smallholder farmer livelihoods.",
+        description: "Executing on the ground with deployment of appropriate technologies for localized impact.",
+    },
+    {
+        num: "04",
+        title: "Policy Architecture",
+        description: "Shaping sustainable climate finance and macro-environmental strategies at the ecosystem level.",
     }
 ];
 
@@ -29,11 +34,10 @@ export default function ServicesSection() {
                     <div className="max-w-3xl">
                         <h2 className="text-[#3A5A40] text-[13px] font-[700] tracking-[0.25em] uppercase mb-8 flex items-center gap-4">
                             <span className="w-8 h-[1px] bg-[#3A5A40]"></span>
-                            Our Core Pillars
+                            Our Services
                         </h2>
                         <h3 className="text-[40px] sm:text-[56px] lg:text-[72px] font-[500] leading-[1.05] tracking-[-0.02em]">
-                            Bridging global <span className="text-[#648460] italic font-light">foresight</span>
-                            <br /> with localized execution.
+                            We don't re-invent the wheel, <span className="text-[#648460] italic font-light">We refine it!</span>
                         </h3>
                     </div>
                     <div className="max-w-[360px]">
